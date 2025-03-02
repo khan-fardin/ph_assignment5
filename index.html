@@ -17,7 +17,7 @@
             <div class="flex items-center gap-6">
                 <div class="flex items-center gap-4 bg-[#F4F7FF] rounded-[32px] p-[12px]">
                     <img src="./assets/checkbox.png" alt="checkbox">
-                    <h1 class="text-[1.5rem] font-bold">23</h1>
+                    <h1 id="taskMainNum" class="text-[1.5rem] font-bold">23</h1>
                 </div>
                 <img src="./assets/theme-btn.png" alt="color changing theme" id="colorChanger" class="bg-[#F4F7FF] p-[12px] rounded-[50%] active:rotate-180">
             </div>
@@ -35,7 +35,7 @@
                         <img src="./assets/checkbox.png" alt="checkbox" class="bg-white p-4 rounded-[50%]">
                         <div>
                             <p class="font-medium">Task Assigned</p>
-                            <h1 class="text-[2rem] font-bold">0<span>5</span></h1>
+                            <h1 class="text-[2rem] font-bold">0<span id="taskNum">6</span></h1>
                         </div>
                     </div>
                     <!-- discover new -->
@@ -46,9 +46,7 @@
                     <!-- date -->
                     <div class="bg-[#F4F7FF] p-4 rounded-xl flex items-center justify-center gap-3 w-fit">
                         <img src="./assets/calender.png" alt="checkbox" class="bg-white p-4 rounded-[50%]">
-                        <div id="liveDate">
-                            <!-- <p class="font-medium text-[1rem]">Wed,</p>
-                            <h1 class="text-[1rem] font-bold">Jul 28 2025</h1> -->
+                        <div id="liveDate" class="font-medium text-[1rem]">
                         </div>
                     </div>
                 </div>
@@ -69,7 +67,7 @@
                             <button id="fixMobileBtn1" class="btn text-white bg-[#a4a7be] rounded-lg hidden">Completed</button> <!--this is clone button-->
                         </div>
                     </div>
-                    <div class="bg-[#F4F7FF] rounded-xl p-6 max-w-[342px]">
+                    <div id="addDark" class="bg-[#F4F7FF] rounded-xl p-6 max-w-[342px]">
                         <h1 class="bg-white px-4 py-2 rounded-lg w-fit">CloudSync</h1>
                         <h1 class="text-[1.5rem] font-medium my-3">Add Dark Mode</h1>
                         <p class="p-4 bg-white overflow-hidden rounded-lg h-[90px] mb-4">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
@@ -78,10 +76,11 @@
                                 <p>Deadline</p>
                                 <h1 class="font-medium">21 March 2025</h1>
                             </div>
-                            <button class="btn text-white bg-[#898da3] rounded-lg">Completed</button>
+                            <button id="addDarkBtn" class="btn text-white bg-[#3752FD] rounded-lg">Completed</button>
+                            <button id="addDarkBtn1" class="btn text-white bg-[#a4a7be] rounded-lg hidden">Completed</button> <!--this is clone button-->
                         </div>
                     </div>
-                    <div class="bg-[#F4F7FF] rounded-xl p-6 max-w-[342px]">
+                    <div id="swift" class="bg-[#F4F7FF] rounded-xl p-6 max-w-[342px]">
                         <h1 class="bg-white px-4 py-2 rounded-lg w-fit">SwiftPay</h1>
                         <h1 class="text-[1.5rem] font-medium my-3">Optimize  Home page</h1>
                         <p class="p-4 bg-white overflow-hidden rounded-lg h-[90px] mb-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
@@ -90,10 +89,11 @@
                                 <p>Deadline</p>
                                 <h1 class="font-medium">21 March 2025</h1>
                             </div>
-                            <button class="btn text-white bg-[#3752FD] rounded-lg">Completed</button>
+                            <button id="swiftBtn" class="btn text-white bg-[#3752FD] rounded-lg">Completed</button>
+                            <button id="swiftBtn1" class="btn text-white bg-[#a4a7be] rounded-lg hidden">Completed</button>
                         </div>
                     </div>
-                    <div class="bg-[#F4F7FF] rounded-xl p-6 max-w-[342px]">
+                    <div id="meta" class="bg-[#F4F7FF] rounded-xl p-6 max-w-[342px]">
                         <h1 class="bg-white px-4 py-2 rounded-lg w-fit">Meta</h1>
                         <h1 class="text-[1.5rem] font-medium my-3">Add new emoji 🤲</h1>
                         <p class="p-4 bg-white overflow-hidden rounded-lg h-[90px] mb-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
@@ -102,10 +102,11 @@
                                 <p>Deadline</p>
                                 <h1 class="font-medium">21 March 2025</h1>
                             </div>
-                            <button class="btn text-white bg-[#3752FD] rounded-lg">Completed</button>
+                            <button id="metaBtn" class="btn text-white bg-[#3752FD] rounded-lg">Completed</button>
+                            <button id="metabtn1" class="btn text-white bg-[#a4a7be] rounded-lg hidden">Completed</button>
                         </div>
                     </div>
-                    <div class="bg-[#F4F7FF] rounded-xl p-6 max-w-[342px]">
+                    <div id="google" class="bg-[#F4F7FF] rounded-xl p-6 max-w-[342px]">
                         <h1 class="bg-white px-4 py-2 rounded-lg w-fit">Google LLC</h1>
                         <h1 class="text-[1.5rem] font-medium my-3">Integrate OpenAI API </h1>
                         <p class="p-4 bg-white overflow-hidden rounded-lg h-[90px] mb-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
@@ -114,10 +115,11 @@
                                 <p>Deadline</p>
                                 <h1 class="font-medium">21 March 2025</h1>
                             </div>
-                            <button class="btn text-white bg-[#3752FD] rounded-lg">Completed</button>
+                            <button id="googleBtn" class="btn text-white bg-[#3752FD] rounded-lg">Completed</button>
+                            <button id="googleBtn1" class="btn text-white bg-[#a4a7be] rounded-lg hidden">Completed</button>
                         </div>
                     </div>
-                    <div class="bg-[#F4F7FF] rounded-xl p-6 max-w-[342px]">
+                    <div id="glass" class="bg-[#F4F7FF] rounded-xl p-6 max-w-[342px]">
                         <h1 class="bg-white px-4 py-2 rounded-lg w-fit">Glassdoar</h1>
                         <h1 class="text-[1.3rem] font-medium my-3">Improve Job searching </h1>
                         <p class="p-4 bg-white overflow-hidden rounded-lg h-[90px] mb-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
@@ -126,7 +128,8 @@
                                 <p>Deadline</p>
                                 <h1 class="font-medium">21 March 2025</h1>
                             </div>
-                            <button class="btn text-white bg-[#3752FD] rounded-lg">Completed</button>
+                            <button id="glassBtn" class="btn text-white bg-[#3752FD] rounded-lg">Completed</button>
+                            <button id="glassBtn1" class="btn text-white bg-[#a4a7be] rounded-lg hidden">Completed</button>
                         </div>
                     </div>
                 </section>
@@ -149,5 +152,6 @@
     </main>
 
     <script src="./script/index.js"></script>
+    <script src="./script/utility.js"></script>
 </body>
 </html>

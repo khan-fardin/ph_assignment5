@@ -28,10 +28,39 @@ document.getElementById("dicoverBlog").addEventListener("click", function(){
     window.location.href='blog.html'
 })
 
-// testing
+// task lists
 document.getElementById("fixMobileBtn").addEventListener('click', function(){
-    alert("Board Updated Successfully")
+    test(fixMobile)
     document.getElementById("fixMobileBtn").style.display='none'
-    document.getElementById("fixMobileBtn1").style.display='block'
-    document.getElementById("historyList").append("bhosdika")
+    document.getElementById("fixMobileBtn1").style.display='block'  
 })
+document.getElementById("addDarkBtn").addEventListener('click', function(){
+    test(addDark)
+    document.getElementById("addDarkBtn").style.display='none'
+    document.getElementById("addDarkBtn1").style.display='block'   
+})
+document.getElementById("swiftBtn").addEventListener('click', function(){
+    test(swift)
+    document.getElementById("swiftBtn").style.display='none'
+    document.getElementById("swiftBtn1").style.display='block'
+})
+document.getElementById("metaBtn").addEventListener('click', function(){
+    test(meta)
+    document.getElementById("metaBtn").style.display='none'
+    document.getElementById("metabtn1").style.display='block'
+})
+document.getElementById("googleBtn").addEventListener('click', function(){
+    test(google)
+    document.getElementById("googleBtn").style.display='none'
+    document.getElementById("googleBtn1").style.display='block'
+})
+document.getElementById("glassBtn").addEventListener('click', function(){
+    test(glass)
+    document.getElementById("glassBtn").style.display='none'
+    document.getElementById("glassBtn1").style.display='block'
+})
+
+// last alert
+if (taskNum===1){
+    alert("Congo! You've done all tasks!!!")
+}
